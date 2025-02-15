@@ -62,13 +62,21 @@ header {
     <style>
         .image-row {
             display: flex;
-            justify-content: center; /* Align images in the center */
+           justify-content: center; /* Align images in the center */
             gap:50px; /* Add space between images */
         }
          .image-row img {
             width: 200px; /* Adjust image size */
             height: 200px;
             border-radius: 20px;
+        }
+        @media(max-width:768px){
+            .image-row{
+                align-items:center;
+            flex-direction:column; 
+            margin-top: 1rem;
+            background:black;
+            }
         }
     </style>
 </head>
